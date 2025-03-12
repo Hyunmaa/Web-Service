@@ -1,0 +1,253 @@
+{
+	"info": {
+		"_postman_id": "8b2d3fd4-560f-41b3-8b15-3897279af69a",
+		"name": "M1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30999392"
+	},
+	"item": [
+		{
+			"name": "POST",
+			"item": [
+				{
+					"name": "Add User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "confirmPassword",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "display_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "date_of_birth",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "localhost:3000/api/user"
+					},
+					"response": []
+				},
+				{
+					"name": "Add Jadwal",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "tanggal",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "judul",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "prioritas",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "localhost:3000/api/jadwal"
+					},
+					"response": []
+				},
+				{
+					"name": "Confirmation Jadwal",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "jadwal_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "localhost:3000/api/jadwal/confirmation"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GET",
+			"item": [
+				{
+					"name": "Get Pegawai",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/user/pegawai?nama=",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"user",
+								"pegawai"
+							],
+							"query": [
+								{
+									"key": "nama",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Manager",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/user/manager?nama=",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"user",
+								"manager"
+							],
+							"query": [
+								{
+									"key": "nama",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Jadwal",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/jadwal/?tanggal=",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"jadwal",
+								""
+							],
+							"query": [
+								{
+									"key": "tanggal",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DELETE",
+			"item": [
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "localhost:3000/api/user"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Jadwal",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "jadwal_id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "localhost:3000/api/jadwal"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
